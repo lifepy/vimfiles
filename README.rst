@@ -1,82 +1,54 @@
-pyflakes-vim
+Installation
 ============
 
-A Vim plugin for checking Python code on the fly.
+复制本库
+``git clone git@github.com:lifepy/vimfiles.git ~/.vim``
 
-PyFlakes catches common Python errors like mistyping a variable name or
-accessing a local before it is bound, and also gives warnings for things like
-unused imports.
+确保vim可以找到.vimrc文件，一般可以做一个软链接：
+``ln -s ~/.vim/vimrc ~/.vimrc``
 
-pyflakes-vim uses the output from PyFlakes to highlight errors in your code.
-To locate errors quickly, use quickfix_ commands like :cc.
+或者在你的.vimrc中引用: ``source ~/.vim/vimrc``
 
-Make sure to check vim.org_ for the latest updates.
+pyflakes: ``sudo apt-get install pyflakes``
 
-.. _pyflakes.vim: http://www.vim.org/scripts/script.php?script_id=2441
-.. _vim.org: http://www.vim.org/scripts/script.php?script_id=2441
-.. _quickfix: http://vimdoc.sourceforge.net/htmldoc/quickfix.html#quickfix
+Command-T_: ``cd ~/.vim/bundle/Command-T && rake make``
 
-Quick Installation
-------------------
+`pep8 <http://pypi.python.org/pypi/pep8>`_: ``sudo apt-get install pep8``
 
-1. Make sure your ``.vimrc`` has::
- 
-    filetype on            " enables filetype detection
-    filetype plugin on     " enables filetype specific plugins
+markdown: ``sudo apt-get install markdown``
 
-2. Download the latest release_.
+Bundled Plugins
+===============
 
-3. If you're using pathogen_, unzip the contents of ``pyflakes-vim.zip`` into
-   its own bundle directory, i.e. into ``~/.vim/bundle/pyflakes-vim/``.
+-  SnipMate_ Vim下的TextMate，可以自定义动作映射，替换文本
 
-   Otherwise unzip ``pyflakes.vim`` and the ``pyflakes`` directory into
-   ``~/.vim/ftplugin/python`` (or somewhere similar on your
-   `runtime path`_ that will be sourced for Python files).
+-  `NERD\_tree`_ Vim内置文件浏览
 
-.. _release: http://www.vim.org/scripts/script.php?script_id=2441
-.. _pathogen: http://www.vim.org/scripts/script.php?script_id=2332
-.. _runtime path: http://vimdoc.sourceforge.net/htmldoc/options.html#'runtimepath' 
+-  surround_ 非常快捷有效地改变quotes
 
-Running from source
--------------------
+-  pyflakes_ python语法检查利器
 
-If you're running pyflakes-vim "from source," you'll need the PyFlakes library
-on your PYTHONPATH somewhere.  (It is included in the vim.org zipfile.) I recommend
-getting my PyFlakes_ fork, which retains column number information, giving more
-specific error locations.
+-  markdown_ Markdown语法支持
 
-.. _vim.org: http://www.vim.org/scripts/script.php?script_id=2441
-.. _PyFlakes: http://github.com/kevinw/pyflakes
+-  Command-T_ The Command-T plug-in for VIM provides an extremely fast, intuitive mechanism for opening files with a minimal number of keystrokes
 
-Hacking
--------
+-  Pydiction_ python代码自动补全，按<Tab>即可
 
-::
+-  git-vim_ 允许在Vim内执行git命令
 
-  git clone git://github.com/kevinw/pyflakes-vim.git
-  cd pyflakes-vim
-  git clone git://github.com/kevinw/pyflakes.git
+-  `pep8 <https://github.com/vim-scripts/pep8>`_ python语法检查 `PEP8 <http://www.python.org/dev/peps/pep-0008/>`_
 
-Options
--------
+- `supertab <https://github.com/ervandew/supertab>`_ <Tab>触发自动补全
 
-Set this option to you vimrc file to disable quickfix support::
-    
-    let g:pyflakes_use_quickfix = 0
+- `css-color-vim <https://github.com/skammer/vim-css-color>`_ 高亮显示CSS文件中的颜色
 
-The value is set to 1 by default.
 
-TODO
-----
- * signs_ support (show warning and error icons to left of the buffer area)
- * configuration variables
- * parse or intercept useful output from the warnings module
-
-.. _signs: http://www.vim.org/htmldoc/sign.html
-
-Changelog
----------
-
-Please see http://www.vim.org/scripts/script.php?script_id=2441 for a history of
-all changes.
-
+.. _SnipMate: https://github.com/lxneng/snipmate.vim 
+.. _NERD\_tree: https://github.com/scrooloose/nerdtree
+.. _pyflakes: https://github.com/kevinw/pyflakes-vim
+.. _markdown: https://github.com/tpope/vim-markdown
+.. _Command-T: https://github.com/wincent/Command-T
+.. _rails: https://github.com/tpope/vim-rails
+.. _Pydiction: https://github.com/vim-scripts/Pydiction
+.. _git-vim: https://github.com/motemen/git-vim
+.. _pep8: https://github.com/vim-scripts/pep8
