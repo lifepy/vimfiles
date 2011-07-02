@@ -1,11 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/media/share/opt/workspace/myway-project/myway/template'
-let g:netrw_dirhist_2='/media/share/opt/workspace/python/crawler/koubei'
-let g:netrw_dirhist_3='/home/simon/.ssh'
-let g:netrw_dirhist_4='/media/share/opt/workspace/wolfsipder/wolfsipder'
-let g:netrw_dirhist_5='/media/share/opt/workspace/wolfspider/wolfspider/spiders'
-let g:netrw_dirhist_6='/media/share/opt/workspace/wolfspider/dianping/dianping'
-let g:netrw_dirhist_7='/opt/lib/python/piranha-byteflow-0109284f9a8d/templates/tagging'
-let g:netrw_dirhist_8='/media/share/opt/workspace/pydev/myway/src/myway/console'
-let g:netrw_dirhist_9='/media/share/opt/workspace/pydev/myway/template'
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/media/share/opt/workspace/pydev/myway/account'
+let g:netrw_dirhist_2='/home/simon/.vim'
+let g:netrw_dirhist_3='/media/share/opt/workspace/wolfspider/dianping/dianping'
+let g:netrw_dirhist_4='/media/share/opt/workspace/pydev/myway/apache'
+let g:netrw_dirhist_5='/home/simon/x'

@@ -33,8 +33,7 @@ let g:vimwiki_file_exts = 'pdf,txt,doc,rtf,xls,php,zip,rar,7z,html,gz,C,java,py'
 
 colorscheme wombat
 
-map <F2> :NERDTreeToggle<cr>
-map <C-F2> :NERDTreeToggle /opt/workspace/<cr>
+map <F2> :NERDTreeToggle %<cr>
 " <S-F4> -- toggle line number 
 nnoremap <S-F4> :set invnumber<cr>
 
